@@ -1,0 +1,292 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body background */
+body {
+    background-color: #2e2c2c;  /* light grey */
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: left;
+    min-height: 100vh;
+}
+
+/* Header at top */
+
+header h1 {
+    
+    color: #c5a900; 
+    font-size: 100px;
+    margin-bottom: 5px;
+    transform: translateX(30px);
+     font-family: 'Montserrat', sans-serif;
+       text-shadow:
+        0 2px 6px rgba(0,0,0,0.6),
+        0 0 12px rgba(212,175,55,0.6);
+}
+
+header p {
+    color:#c5a900;
+    font-size: 15px;
+    transform: translateY(-50px);
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;   
+    position: center;          
+    top: 10px;               
+    left: 10;
+    padding-left: 10px;
+    gap: 10px;                /* space between menu items */
+}
+
+/* Menu items */
+.menu-item {
+    font-size: 22px;
+    color: black;             
+    text-decoration: none;    
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.menu-item {
+    font-size: 22px;
+    color: #2e2c2c(131, 8, 8);             
+    text-decoration: sans-serif;    
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+    
+    /* Add these for a border */
+    border: 1px solid #2e2c2c(131, 29, 29);    /* black border */
+    border-radius: 0px;        /* rounded corners */    
+    padding: 15px 10px;         /* space inside the button */
+    text-align: center;         /* center the text */
+   
+}
+
+/* Hover effect */
+.menu-item:hover {
+    color: #ff9900;           /* change text color on hover */
+    transform: scale(1);   /* slight grow effect */
+}
+.menu-item {
+    font-size: 20px;
+    color: #2e2c2c(46, 42, 42);             
+    text-decoration: none;    
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+    font-family: 'Georgia', serif;   /* Example: serif font */
+    font-weight: bold;   
+    border: 1px solid #2e2c2c(153, 20, 20);  
+    border-radius: 10px;      
+    padding: 85px 10px;        
+    text-align: left;          
+    background-size: cover;    /* make image fill button */
+    background-position: center;
+    position: relative;        /* for text layering */
+}
+/* Individual images for each button */
+.boink1 {
+    background-image: url(https://img.freepik.com/premium-vector/earthquake-scene-with-cartoon-character_29937-7628.jpg?w=2000);
+}
+
+.boink2 {
+    background-image: url(https://img.freepik.com/premium-vector/firefighters-burning-house-fireman-characters-extinguish-fire-building-with-hose-emergency-workers-with-firetruck-rescue-people-from-blaze-vector-illustration_102902-7260.jpg?w=2000); /* replace with your image */
+}
+
+.boink3 {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/438/474/original/flood-in-town-river-water-stream-flow-at-city-street-with-cottage-houses-natural-disaster-with-rain-and-storm-at-countryside-area-with-flooded-buildings-climate-change-cartoon-illustration-vector.jpg); /* replace with your image */
+}
+
+.boink4 {
+    background-image: url(https://i.pinimg.com/originals/52/fb/d5/52fbd5681988f07194b7cb2c9cc9b85b.jpg); /* replace with your image */
+}
+.menu-item:hover {
+    color: #ff9900;           
+    transform: scale(1.02);   
+}
+.header-with-image {
+    display: flex;              /* arrange content horizontally */
+    align-items: center;        /* vertically center text and image */
+    justify-content: space-between; /* space between text and image */
+    padding: 20px 4px;         /* some padding around header */
+}
+
+.header-with-image h1 {
+    font-size: 48px;
+    color: #c5a900;             /* gold / dirty yellow text */
+}
+
+.header-image {
+    width: 150px;               /* adjust size of the image */
+    height: auto;               /* maintain aspect ratio */
+    border-radius: 10px;        /* optional rounded corners */
+}
+.menu-item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark overlay (default) */
+.menu-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    transition: background 0.3s ease;
+    z-index: 0;
+}
+
+
+.menu-item span {
+    position: relative;
+    z-index: 1;
+}
+.left-menu {
+    gap: 15px;   /* space between buttons */
+}
+.menu-item {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.menu-item:hover::before {
+    background: rgba(0, 0, 0, 0.15); /* less dark = brighter */
+}
+.menu-item:hover {
+    box-shadow:
+        0 0 15px rgba(212, 175, 55, 0.8),
+        0 0 30px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
+}
+.menu-item:hover span {
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.8);
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+    /* LEFT BORDER */
+    border-left: 6px solid #c5a900; /* dirty gold */
+    
+    padding: 60px 20px;
+    background-color: transparent;
+}
+.menu-icon {
+    width: 10px;
+    height: 10px;
+    object-fit: cover;
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+    padding: 20px;
+    background-color: transparent;
+    width: 250px;
+    height: auto;
+    position: relative;  /* Needed for pseudo-element */
+}
+
+/* Short left border using ::before */
+.menu-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;           /* start border 15px from top */
+    height: calc(100% - 30px); /* leave space at bottom too */
+    width: 6px;          /* border thickness */
+    background-color: #c5a900;
+    border-radius: 3px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover glow on left border */
+.menu-item:hover::before {
+    background-color: #ffd84d;
+    box-shadow: 0 0 10px rgba(255, 216, 77, 0.7);
+}
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 25px;   /* bigger space between buttons */
+}
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 25px;   /* bigger space between buttons */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;      /* space between image and text */
+
+    font-size: 24px;  /* slightly bigger text */
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+    padding: 30px 25px;  /* bigger padding inside button */
+    background-color: transparent;
+    width: 300px;        /* wider button */
+    height: 120px;       /* taller button */
+    position: relative;  /* needed for pseudo-element (border) */
+}
+
+/* Short left border using pseudo-element */
+.menu-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    height: calc(100% - 30px);
+    width: 0px;
+    background-color: #c5a900;
+    border-radius: 3px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover glow */
+.menu-item:hover::before {
+    background-color: #ffd84d;
+    box-shadow: 0 0 12px rgba(255, 216, 77, 0.7);
+}
+
+/* Image on left */
+.menu-icon {
+    width: 80px;        /* bigger image to match taller buttons */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* Text next to image */
+.menu-item span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;   /* bigger text */
+    color: black;
+}
